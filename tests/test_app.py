@@ -34,5 +34,5 @@ class TestStrings:
             assert multiply(4, 0) == 0
 
         def test_multiply_negatives_numbers(self):
-            assert multiply(-5, -10) == -50
+            assert multiply(-5, -10) == 50
             
