@@ -18,3 +18,10 @@ def reverse_string(s: str) -> str:
 def multiply(a: int, b: int):
     """Mutltiply two numbers"""
     return a * b
+
+def factorial(n):
+    if n < 0:
+        print("Error, factorial not defined for negative numbers")
+    if n <= 1:
+        return 1
+    return n * factorial(n - 1)
