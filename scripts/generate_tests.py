@@ -78,7 +78,7 @@ def main():
             tests = generate_tests_for_function(func)
             all_tests.append(tests)
 
-    os.makedirs("tests", exist_ok=True)
+    os.mkdir("tests", exist_ok=True)
 
     with open("tests/test_generated.py", "w") as f:
         f.write("\n\n".join(all_tests))
